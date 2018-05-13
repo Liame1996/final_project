@@ -71,10 +71,10 @@ public class data extends AppCompatActivity implements NavigationView.OnNavigati
         mData.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-                for(DataSnapshot data : dataSnapshot.getChildren()) {
-                    aList.add(dataSnapshot.getValue(String.class));
-                    adapter.notifyDataSetChanged();
-                }
+//                for(DataSnapshot data : dataSnapshot.getChildren()) {
+//                    aList.add(dataSnapshot.getValue(String.class));
+//                    adapter.notifyDataSetChanged();
+//                }
             }
 
             @Override
