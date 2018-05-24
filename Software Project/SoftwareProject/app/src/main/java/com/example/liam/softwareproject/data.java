@@ -33,7 +33,6 @@ public class data extends AppCompatActivity implements NavigationView.OnNavigati
     FirebaseAuth firebaseAuth;
 
     private ListView database;
-    private Button logoutBtn;
     private EditText addET;
 
     private ArrayList<String> aList = new ArrayList<>();
@@ -57,13 +56,11 @@ public class data extends AppCompatActivity implements NavigationView.OnNavigati
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        mData = FirebaseDatabase.getInstance().getReference();
+        mData = FirebaseDatabase.getInstance().getReference().child("distant");
 
         adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, aList);
 
         database = (ListView) findViewById(R.id.database);
-
-        logoutBtn = (Button) findViewById(R.id.logout);
 
         database.setAdapter(adapter);
 
@@ -71,10 +68,10 @@ public class data extends AppCompatActivity implements NavigationView.OnNavigati
         mData.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-//                for(DataSnapshot data : dataSnapshot.getChildren()) {
-//                    aList.add(dataSnapshot.getValue(String.class));
-//                    adapter.notifyDataSetChanged();
-//                }
+                for(DataSnapshot data : dataSnapshot.getChildren()) {
+                    aList.add(data.getValue().toString());
+                    adapter.notifyDataSetChanged();
+                }
             }
 
             @Override
@@ -140,7 +137,7 @@ public class data extends AppCompatActivity implements NavigationView.OnNavigati
         int id = item.getItemId();
 
         if (id == R.id.nav_gallery) {
-            startActivity(new Intent(getApplicationContext(), Photos.class));
+            startActivity(new Intent(getApplicationContext(), data.class));
             finish();
 
         } else if (id == R.id.nav_slideshow) {

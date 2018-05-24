@@ -156,7 +156,7 @@ public class Photos extends AppCompatActivity implements NavigationView.OnNaviga
         int id = item.getItemId();
 
         if (id == R.id.nav_gallery) {
-            startActivity(new Intent(getApplicationContext(), Photos.class));
+            startActivity(new Intent(getApplicationContext(), data.class));
             finish();
 
         } else if (id == R.id.nav_slideshow) {

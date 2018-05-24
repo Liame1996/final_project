@@ -86,7 +86,7 @@ public class CreateUser extends AppCompatActivity implements View.OnClickListene
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             finish();
-                            startActivity(new Intent(getApplicationContext(), DisplayData.class));
+                            startActivity(new Intent(getApplicationContext(), data.class));
                         }
                         else{
                             Toast.makeText(CreateUser.this, "Could not register, please try again", Toast.LENGTH_SHORT).show();

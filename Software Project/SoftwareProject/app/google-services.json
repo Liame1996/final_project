@@ -1,27 +1,31 @@
 {
   "project_info": {
-    "project_number": "441214567037",
-    "firebase_url": "https://iotfinalproject-202113.firebaseio.com",
-    "project_id": "iotfinalproject-202113",
-    "storage_bucket": "iotfinalproject-202113.appspot.com"
+    "project_number": "575796114988",
+    "firebase_url": "https://software-project-4ae0c.firebaseio.com",
+    "project_id": "software-project-4ae0c",
+    "storage_bucket": "software-project-4ae0c.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:441214567037:android:a6bbe4984e1f0ecc",
+        "mobilesdk_app_id": "1:575796114988:android:a6bbe4984e1f0ecc",
         "android_client_info": {
           "package_name": "com.example.liam.softwareproject"
         }
       },
       "oauth_client": [
         {
-          "client_id": "441214567037-vro7nfn56o8j5g4lu45amank7opvm3fj.apps.googleusercontent.com",
+          "client_id": "575796114988-9ae5n935d14oar6oikb1q87bjbf209a4.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "575796114988-9ae5n935d14oar6oikb1q87bjbf209a4.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDzs5r8UrKEaDJKTfXKUMIib4r7DuZEufY"
+          "current_key": "AIzaSyC74i6rHOBHos64OjbpFHH5b_0LZBS1gWg"
         }
       ],
       "services": {
